@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Django </title>
+</head>
+<body>
+	<h2>Hello, world!</h2>
+	<form  action="/polls/name">
+		<p>Enter your name:</p>
+		<input type='text' name="A" id="A">
+		<input type='submit' value='Next'>
+		<br><br>
+		<a href="{% url 'russian' %}">Black</a>
+		<br><br>
+		<a href="{% url 'index' %}">Русский</a>
+	</form>
+</body>
+</html>
+<style>
+	a{
+		font-family: sans-serif; 
+    font-style: italic;
+		
+	}
+	p{
+	font-family: calibri; 
+    font-style: italic;
+	}
+	h2 {
+	
+    font-style: italic;
+	}
+</style>

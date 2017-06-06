@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Django</title>
+</head>
+<body>
+	<h3>Привет, мир!</h3>
+	<form  action="/polls/name">
+		<p>Введите имя:</p>
+		<input type='text' name="A" id="A">
+		<input type='submit' value='Далее'>
+		<br><br>
+		<a href="{% url 'black' %}">Черный фон</a>
+		<br><br>
+		<a href="{% url 'english' %}">English</a>
+	</form>
+</body>
+</html>
+
+
+<style>
+	a{
+		font-family: sans-serif; 
+    font-style: italic;
+		
+	}
+	p{
+	font-family: calibri; 
+    font-style: italic;
+	}
+	h3 {
+	
+    font-style: italic;
+	}
+</style>
